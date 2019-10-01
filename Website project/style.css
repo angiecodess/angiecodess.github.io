@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
+
+/*-----------------NAV section------------------*/
+.navigation {
+	background-color: white;
+}
+
+.logo, .menu {
+	display: inline-block;
+
+}
+
+.logo {
+	margin: 20px;
+	font-weight: 600;
+	font-family: "Georgia", serif;
+}
+
+.menu {
+	float:right;
+	margin: 20px;
+}
+
+.menu ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	color: blue;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	padding: 20px 8px 20px 8px;
+}
+
+.menu ul li a:hover {
+	background-color: pink;
+	transition: all 0.5s ease;
+}
+
+
+/*-----------------HEADER SECTION-------------------*/
+header {
+	background-image: url("image/headerimg.jpg");
+	height: 500px;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: -150px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 18px;
+}
+
+header p {
+	margin: 0px;
+	font-size: 20px;
+}
+
+header h1 {
+	font-family: "Times New Roman", "Book Antique", serif;
+}
+
+.headercontainer {
+	text-align: center;
+	padding-top: 120px; 
+
+}
+
+.btn-contact {
+	background-color: white;
+	display: inline-block;
+	padding: 10px 25px;
+	color: black;
+	border-radius: 30px;
+	text-decoration: none;
+	border: 2px solid white;
+}
+
+.btn-contact:hover {
+	background-color: #898BF0;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+/*-----------------ABOUT ME------------------*/
+.aboutme {
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fffdf0;
+}
+
+.aboutme:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.aboutme h2 {
+	text-align: center;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.aboutme h2:after {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 2px;
+	margin-left: -40px;
+	left: 50%;
+	bottom: 0px;
+	background-color: #c8a2c8;
+}
+
+
+.aboutme .col-left, .aboutme .col-right {
+	width: 45%;
+	float: left;
+}
+
+.aboutme .col-left {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.aboutme .col-left img {
+	max-width: 100%;
+}
+
+.aboutme a {
+	background-color: #ffb158;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	display: inline-block;
+	transition: all 0.5s ease;
+	border: 2px solid lightgrey;
+}
+
+.aboutme a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*-----------------SKILLS------------------*/
+.myskills {
+	background-color: #e2e2e2;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.myskills h2 {
+	font-family: 
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+
+.myskills h2:after {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 2px;
+	margin-left: -40px;
+	left: 50%;
+	bottom: 0px;
+	background-color: black;
+}
+
+.myskills:after{
+	content: '';
+	display: block;
+	clear: both;
+
+}
+
+.myskills .skills-left, .myskills .skills-center, .myskills .skills-right {
+	width: 33.3333333333333%;
+	display: inline-block;
+	float: left;
+}
