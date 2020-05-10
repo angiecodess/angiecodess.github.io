@@ -1,252 +1,193 @@
-* {
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-body {
-	margin: 0px;
-}
-
-
-/*-----------------NAV section------------------*/
-.navigation {
-	background-color: white;
-}
-
-.logo, .menu {
-	display: inline-block;
-
-}
-
-.logo {
-	margin: 20px;
-	font-weight: 600;
-	font-family: "Georgia", serif;
-}
-
-.menu {
-	float:right;
-	margin: 20px;
-}
-
-.menu ul {
-	list-style: none;
-	padding-left: 0px;
-	margin: 0px;
-	color: blue;
-}
-
-.menu ul li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.menu ul li a {
-	text-decoration: none;
-	padding: 20px 8px 20px 8px;
-}
-
-.menu ul li a:hover {
-	background-color: pink;
-	transition: all 0.5s ease;
-}
-
-
-/*-----------------HEADER SECTION-------------------*/
-header {
-	background-image: url("image/headerimg.jpg");
-	height: 500px;
-	background-size: cover;
-	background-position-x: center;
-	background-position-y: -150px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-size: 18px;
-}
-
-header p {
-	margin: 0px;
-	font-size: 20px;
-}
-
-header h1 {
-	font-family: "Times New Roman", "Book Antique", serif;
-}
-
-.headercontainer {
-	text-align: center;
-	padding-top: 120px; 
-
-}
-
-.btn-contact {
-	background-color: white;
-	display: inline-block;
-	padding: 10px 25px;
-	color: black;
-	border-radius: 30px;
-	text-decoration: none;
-	border: 2px solid white;
-}
-
-.btn-contact:hover {
-	background-color: #898BF0;
-	color: white;
-	transition: all 0.5s ease;
-}
-
-/*-----------------ABOUT ME------------------*/
-.aboutme {
+html, body {
+    height:100%;
 	width: 100%;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #fffdf0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
 }
 
-.aboutme:after {
-	content: '';
-	display: block;
-	clear: both;
+.heading {
+	font-family: 'Proza Libre', sans-serif;
 }
 
-.aboutme h2 {
-	text-align: center;
-	position: relative;
-	padding-bottom: 10px;
+.navbar {
+	padding: 0.8rem;
 }
 
-.aboutme h2:after {
-	content: '';
+.navbar-nav li{
+	padding-right: 30px;
+}
+
+.nav-link {
+	font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height:100%;
+}
+
+.carousel-caption {
 	position: absolute;
-	width: 80px;
-	height: 2px;
-	margin-left: -40px;
-	left: 50%;
-	bottom: 0px;
-	background-color: #c8a2c8;
+	top: 40%;
 }
 
 
-.aboutme .col-left, .aboutme .col-right {
-	width: 45%;
-	float: left;
-}
-
-.aboutme .col-left {
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-.aboutme .col-left img {
-	max-width: 100%;
-}
-
-.aboutme a {
-	background-color: #ffb158;
-	padding: 10px 25px;
-	text-decoration: none;
-	color: white;
-	border-radius: 20px;
-	display: inline-block;
-	transition: all 0.5s ease;
-	border: 2px solid lightgrey;
-}
-
-.aboutme a:hover {
+.btn-primary {
 	background-color: white;
+	border-radius: 100px;
+	border-width: 4px;
+	border-color: white;
 	color: black;
 }
 
-/*-----------------SKILLS------------------*/
-.myskills {
-	background-color: #e2e2e2;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	text-align: center;
+.btn-primary:hover {
+	background-color: rgb(92, 90, 88);
+	border-radius: 100px;
+	border-width: 4px;
+	border-color:rgb(92, 90, 88);
+	color: white;
 }
 
-.myskills h2 {
-	font-family: 
-	text-transform: uppercase;
-	position: relative;
-	padding-bottom: 10px;
+.padding{
+	padding:2rem;
 }
 
-
-.myskills h2:after {
-	content: '';
-	position: absolute;
-	width: 80px;
-	height: 2px;
-	margin-left: -40px;
-	left: 50%;
-	bottom: 0px;
-	background-color: black;
+.welcome {
+	width:95%;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
-.myskills:after{
-	content: '';
-	display: block;
-	clear: both;
-
+.welcome hr {
+		clear:both;
+		display:block;
+		width: 80%;               
+		background-color:#b4b4b4;
+		height: 2px;
+		margin-top: 20px;
+		margin-bottom: 40px;
 }
 
-.myskills .skills-left, .myskills .skills-center, .myskills .skills-right {
-	width: 33.3333333333333%;
-	display: inline-block;
-	float: left;
-	padding-left :2%;
-	padding-right: 2%;
+.projects hr {
+	margin-bottom: 0px;
 }
 
-
-/*-----------------CONTACT------------------*/
-
-.contact {
-	text-align: center;
+.card-row {
+	padding-top: 0px;
 }
 
-.contact h2 {
-	position: relative;
-	padding-bottom: 10px;
+.fa-code {
+	color: #e54d26;
 }
 
-.contact h2:after {
-	content: '';
-	position: absolute;
-	width: 80px;
-	height: 2px;
-	margin-left: -40px;
-	left: 50%;
-	bottom: 0px;
-	background-color: #c8a2c8;
+.fa-bold {
+	color: #563d7c;
 }
 
+.fa-css3 {
+	color: #2163af;
+}
 
-.contact p {
-	margin: 0;
+.fa-python {
+	color: #f7f30b;
+}
+
+.fa-cuttlefish {
+	color: #2163af;
+}
+
+.fa-database {
+	color: #5b5b5c;
+}
+
+.fa-code, .fa-bold, .fa-css3, .fa-python, .fa-cuttlefish, .fa-database {
+	font-size:4em;
+	margin: 2rem;
+}
+
+.card {
+	min-height: 550px;;
+	margin: 1rem;
+}
+
+.social a{
+	font-size: 4.5em;
+	padding: 3rem;
 }
 
 .social {
-	padding-top: 35px;
-	padding-bottom: 50px;
+	margin-bottom: 60px;
 }
 
-.linkedin, .email {
-	display: inline-block;
-	width: 150px;
-	background-color: #ffb158;
-	padding: 10px 50px;
-	margin: 15px 15px;
-	text-decoration: none;
-	color: white;
-	border-radius: 20px;
-	display: inline-block;
-	transition: all 0.5s ease;
-	border: 2px solid lightgrey;
+.fa-linkedin-in{
+	color: #0e76a8; 
 }
 
-.linkedin:hover, .email:hover {
-	background-color: white;
-	color: black;
+.fa-envelope-open-text{
+	color: red; 
+}
+
+.fa-github{
+	color: black; 
+}
+
+.fa-linkedin-in:hover,
+.fa-envelope-open-text:hover,
+.fa-github:hover{
+	color: #d5d5d5;
+}
+
+
+/*-------- Media Queries ------*/
+@media (max-width: 992px) {
+	.social a {
+		font-size: 4em;
+		padding:2em;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel-caption {
+		top:30%;
+	}
+	.carousel-caption h1 {
+		font-size: 200%;
+	}
+	.carousel-caption .btn {
+		font-size: 98%;
+		padding: 8px 14px;
+	}
+	.heading {
+		font-size: 180%;
+	}
+	.social a {
+		font-size: 3em;
+		padding:1.5rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.carousel-caption {
+		top:25%;
+	}
+	.carousel-caption h1 {
+		font-size: 170%;
+	}
+	.carousel-caption .btn {
+		font-size: 95%;
+		padding: 4px 8px;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.heading {
+		font-size: 150%;
+	}
+	.social a {
+		font-size: 2.5em;
+		padding:1.8rem;
+	}
 }
